@@ -14,4 +14,23 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="GameEngineFDM.csproj" />
+    <None Include="obj\GameEngineFDM.csproj.nuget.g.props" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\GameEngineFDM.csproj.nuget.dgspec.json" />
+    <None Include="obj\GameEngineFDM.csproj.nuget.g.targets" />
+    <None Include="obj\project.assets.json" />
+    <None Include="obj\Debug\netstandard2.0\GameEngineFDM.csproj.FileListAbsolute.txt" />
+    <None Include="obj\Debug\netstandard2.0\GameEngineFDM.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\netstandard2.0\GameEngineFDM.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\netstandard2.0\GameEngineFDM.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netstandard2.0\GameEngineFDM.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netstandard2.0\GameEngineFDM.assets.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\netstandard2.0\MainPage.xaml.g.cs" />
+    <Compile Include="obj\Debug\netstandard2.0\GameEngineFDM.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\netstandard2.0\App.xaml.g.cs" />
+  </ItemGroup>
 </Project>
