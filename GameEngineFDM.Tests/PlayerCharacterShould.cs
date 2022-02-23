@@ -166,5 +166,30 @@ namespace GameEngineFDM.Tests
 
             Assert.All(sut.Weapons, weapon => Assert.False(string.IsNullOrWhiteSpace(weapon)));
         }
+
+        [Fact]
+        public void RaiseSleptEvent()
+        {
+            PlayerCharacter sut = new PlayerCharacter();
+
+
+            Assert.Raises<EventArgs>(
+                handler => sut.PlayerSlept += handler,
+                handler => sut.PlayerSlept -= handler,
+                () => sut.Sleep());
+        }
+
+        [Fact]
+        public void RaisePropertyChangedEvent()
+        {
+            PlayerCharacter sut = new PlayerCharacter();
+
+            // 3 arguments:
+            //   * the object that is going to raise the propertychanged event
+            //   * the name of the property for which the PropertyChanged notification should be raised
+            //   * the action that causes the PropertyChanged notification to fire
+
+            Assert.PropertyChanged(sut, "Health", () => sut.TakeDamage(10));
+        }
     }
 }
